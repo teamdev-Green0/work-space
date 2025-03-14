@@ -9,11 +9,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Hello Recursion</h1>
-        <h1>Hello Red Team</h1>
-        <h1>Hello Blue Team</h1>
-        <h1>Hello Green Team</h1>
-     </div>
+    <div id="header"></div>
+    <script>
+        // コンポーネントを読み込む関数
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data);
+        }
+
+        // ページが読み込まれたらヘッダーとフッターを挿入
+        document.addEventListener("DOMContentLoaded", function () {
+            loadComponent("header", "components/header.html");
+            console.log("Website loaded!");
+        });
+    </script>
 </body>
 </html>
