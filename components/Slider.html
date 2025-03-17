@@ -1,29 +1,20 @@
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://acha0203.github.io/Cafe-Recursion/images/coffee-2151200_1280.jpg" class="d-block w-100" alt="slider_image1">
-      </div>
-      <div class="carousel-item">
-        <img src="https://acha0203.github.io/Cafe-Recursion/images/pancakes-5989136_1280.jpg" class="d-block w-100" alt="slider_image2">
-      </div>
-      <div class="carousel-item">
-        <img src="https://acha0203.github.io/Cafe-Recursion/images/apple-pie-5479993_1280.jpg" class="d-block w-100" alt="slider_image3">
-      </div>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false"
+     style="max-height: 400px; overflow: hidden;">
+    <div class="carousel-inner" style="max-height: 400px;">
+        <div class="carousel-item active">
+            <img src="https://acha0203.github.io/Cafe-Recursion/images/coffee-2151200_1280.jpg"
+                 class="d-block w-100" alt="slider_image1"
+                 style="width: 100%; height: 400px; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+            <img src="https://acha0203.github.io/Cafe-Recursion/images/pancakes-5989136_1280.jpg"
+                 class="d-block w-100" alt="slider_image2"
+                 style="width: 100%; height: 400px; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+            <img src="https://acha0203.github.io/Cafe-Recursion/images/apple-pie-5479993_1280.jpg"
+                 class="d-block w-100" alt="slider_image3"
+                 style="width: 100%; height: 400px; object-fit: cover;">
+        </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const carousel = new bootstrap.Carousel('#carouselExampleAutoplaying', {
-        interval: 2000, // 2秒ごとにスライド
-        ride: 'carousel' // ページ読み込み時に自動開始
-      });
-    });
-  </script>
+</div>
