@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/head.css">
+    <link rel="stylesheet" href="/CSS/cards.css">
+
+    <style>
+        body {
+            font-family: 'Nothing You Could Do', cursive;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- 1つ目のテキストボックス -->
+            <div class="col-lg-5 d-flex align-items-stretch">
+                <div class="card p-3 d-flex flex-column gap-3 w-100">
+                    <h4 class="card-title text-center">チョコケーキ</h4>
+                    <div class="d-flex flex-row align-items-center gap-3 w-100">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <p class="card-text">
+                                イチゴも乗ってます
+                            </p>
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcfIdP9St-m4uXvar6fxHL7esgPt8urYFtHQ&s" 
+                             alt="Card image" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            <!-- 2つ目のテキストボックス -->
+            <div class="col-lg-5 d-flex align-items-stretch">
+                <div class="card p-3 d-flex flex-column gap-3 w-100">
+                    <h4 class="card-title text-center">チーズケーキ</h4>
+                    <div class="d-flex flex-row align-items-center gap-3 w-100">
+                       <div class="card-body d-flex flex-column justify-content-center">
+                          <p class="card-text">
+                             手作り
+                         </p>
+                       </div>
+                        <img src="https://user0514.cdnw.net/shared/img/thumb/ogasuta458A8136.jpg?&download=1" 
+                             alt="Card image" class="img-fluid rounded">                  
+                     </div>
+                  </div>
+            </div>
+
+            
+        </div>
+        <div class="row justify-content-center">
+            <!--　３つ目のテキストボックス -->
+            <div class="col-lg-5 d-flex align-items-stretch my-5">
+                <div class="card p-3 d-flex flex-column gap-3 w-100">
+                    <h4 class="card-title text-center">ブッシュドノエル</h4>
+                    <div class="d-flex flex-row align-items-center gap-3 w-100">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <p class="card-text">
+                                おしゃれ
+                            </p>
+                        </div>
+                        <img src="https://thumb.photo-ac.com/c3/c31e8b1045a5442f3414248a9f4456c3_t.jpeg" 
+                             alt="Card image" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            <!-- ４つ目のテキストボックス -->
+            <div class="col-lg-5 d-flex align-items-stretch my-5">
+                <div class="card p-3 d-flex flex-column gap-3 w-100">
+                    <h4 class="card-title text-center">ショートケーキ</h4>
+                    <div class="d-flex flex-row align-items-center gap-3 w-100">
+                       <div class="card-body d-flex flex-column justify-content-center">
+                          <p class="card-text">
+                             シンプル
+                         </p>
+                       </div>
+                        <img src="https://www.pakutaso.com/shared/img/thumb/PPO_1000maicake_TP_V.jpg" 
+                             alt="Card image" class="img-fluid rounded">                  
+                     </div>
+                  </div>
+            </div>
+            
+        </div>
+        
+     </div>
+     
+
+    <script>
+        // コンポーネントを読み込む関数
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data);
+        }
+
+        // ページが読み込まれたら挿入
+        document.addEventListener("DOMContentLoaded", function () {
+            loadComponent("header", "header.html");
+            console.log("Website loaded!");
+        });
+    </script>
+
+</body>
+</html>
+
 
