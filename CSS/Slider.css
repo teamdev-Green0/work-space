@@ -1,16 +1,16 @@
-/* ✅ スライダー全体の高さを制限 */
+
 #carouselExampleAutoplaying {
-    max-height: 400px !important; /* スライダーの高さを250pxに制限 */
-    overflow: hidden; /* はみ出た部分を隠す */
+    max-height: 400px !important; 
+    overflow: hidden; 
 }
 
-/* ✅ スライド画像の高さを固定 */
+
 #carouselExampleAutoplaying .carousel-inner {
     max-height: 400px !important;
 }
 
 #carouselExampleAutoplaying .carousel-item img {
-    width: 100% !important; /* 画像の横幅を100%に */
-    height: 400px !important; /* 高さを250pxに固定 */
-    object-fit: cover !important; /* 画像の比率を維持したまま、枠にフィット */
+    width: 100% !important; 
+    height: 400px !important; 
+    object-fit: cover !important; 
 }
