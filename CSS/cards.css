@@ -1,12 +1,14 @@
 .card {
     width: 100vm;
     background-color: whitesmoke;
-    border-color: white;
+    box-shadow: 0px 0px 8px gray;
   }
   
-  /* Text */
+
   .card-title { 
     text-align:center ;
+    font-size:30px;
+    margin: 10px;
   }
   .card img{
     width: 215px;
