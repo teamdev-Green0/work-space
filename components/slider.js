@@ -11,14 +11,15 @@ function loadComponent(id, file) {
         })
         .catch(error => console.error("Error loading component:", error));
 }
-
+//スライダーとそれ以外のJSを一緒にしてもうたあ//
 document.addEventListener("DOMContentLoaded", function () {
     loadComponent("header", "components/header.html");
     loadComponent("cards", "components/cards.html");
+    loadComponent("footer", "components/footer.html");
     loadComponent("slider", "components/Slider.html").then(() => {
         console.log("Slider loaded!");
 
-        // Bootstrapのスライダーを動作させる（もしスライダーがあるなら）
+        
         var myCarousel = new bootstrap.Carousel(document.querySelector('#carouselExample'), {
             interval: 2000
         });
