@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadComponent("slider", "components/Slider.html").then(() => {
         console.log("Slider loaded!");
 
-        
+        //スライダーのやつ//
         var myCarousel = new bootstrap.Carousel(document.querySelector('#carouselExample'), {
             interval: 2000
         });
