@@ -91,20 +91,8 @@
      </div>
      
 
-    <script>
-        // コンポーネントを読み込む関数
-        function loadComponent(id, file) {
-            fetch(file)
-                .then(response => response.text())
-                .then(data => document.getElementById(id).innerHTML = data);
-        }
+     <script src="components/slider.js"></script>
 
-        // ページが読み込まれたら挿入
-        document.addEventListener("DOMContentLoaded", function () {
-            loadComponent("header", "header.html");
-            console.log("Website loaded!");
-        });
-    </script>
 
 </body>
 </html>
